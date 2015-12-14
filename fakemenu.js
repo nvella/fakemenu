@@ -19,8 +19,8 @@ var fakemenu = function() {
   }
 
   stateObj.prototype.build = function(x, y) {
-    var plat = 'osx';
-    //if(navigator.userAgent.indexOf('Macintosh') >= 0) plat = 'osx';
+    var plat = 'win-chrome';
+    if(navigator.userAgent.indexOf('Macintosh') >= 0) plat = 'osx';
 
     var out = '';
     out += '<div class="fakemenu-' + plat + '"';

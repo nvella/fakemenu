@@ -1,3 +1,5 @@
+/* OS X >= 10.10 */
+
 .fakemenu-osx {
   width: 167px;
   padding-top: 3px;
@@ -61,4 +63,69 @@
   width: 100%;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Windows - Chrome */
+
+.fakemenu-win-chrome {
+  width: 248px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 9pt;
+  line-height: normal;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bababa;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fakemenu-win-chrome:hover {
+  cursor: default;
+}
+
+.fakemenu-win-chrome a {
+  color: black;
+  text-decoration: none;
+}
+
+.fakemenu-win-chrome a:hover {
+  cursor: default;
+}
+
+.fakemenu-item-win-chrome {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 32px;
+}
+
+.fakemenu-item-win-chrome:hover {
+  color: #fff;
+  background-color: #4281f4;
+}
+
+.fakemenu-disabled-win-chrome {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 32px;
+
+  color: #aaa;
+}
+
+.fakemenu-sep-win-chrome {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 1px;
+  background-color: #e9e9e9;
 }
