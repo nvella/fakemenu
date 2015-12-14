@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="fakemenu.css">
+  </head>
+  <body style="background-color: white">
+    <h1>Sample</h1>
+    <script src="fakemenu.js"></script>
+    <script>
+      document.body.innerHTML += fakemenu().addItem('Item 1').addItem('Item 2').addItem('Item 3').addSep().addItem('Item 4', null, true).build();
+    </script>
+  </body>
