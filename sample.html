@@ -2,11 +2,23 @@
 <html>
   <head>
     <link rel="stylesheet" href="fakemenu.css">
+    <style>
+      .sample-box { width: 500px; padding: 10px; }
+      #menu1      { background-color: white; }
+      #menu2      { background-color: blue; }
+      #menu3      { background-color: black; }
+    </style>
   </head>
-  <body style="background-color: white">
+  <body>
     <h1>Sample</h1>
+    <div id="menu1" class="sample-box"></div>
+    <div id="menu2" class="sample-box"></div>
+    <div id="menu3" class="sample-box"></div>
     <script src="fakemenu.js"></script>
     <script>
-      document.body.innerHTML += fakemenu().addItem('Item 1').addItem('Item 2').addItem('Item 3').addSep().addItem('Item 4', null, true).build();
+      document.getElementById('menu1').innerHTML += fakemenu().addItem('Item 1').addItem('Item 2').addItem('Item 3').addSep().addItem('Item 4', null, true).build();
+      document.getElementById('menu2').innerHTML += fakemenu().addItem('Item 1').addItem('Item 2').addItem('Item 3').addSep().addItem('Item 4', null, true).build();
+      document.getElementById('menu3').innerHTML += fakemenu().addItem('Item 1').addItem('Item 2').addItem('Item 3').addSep().addItem('Item 4', null, true).build();
     </script>
   </body>
+</html>
